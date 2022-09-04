@@ -1,0 +1,33 @@
+GET http://localhost:5000/users
+
+
+###
+GET http://localhost:5000/users/1
+
+###
+# create data
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john@gmail.com",
+    "gender": "Male"
+}
+
+###
+#update Data
+PATCH http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "Atif Naufal",
+    "email": "atifnaufalh@gmail.com",
+    "gender": "Male"
+}
+
+###
+#delete data
+DELETE http://localhost:5000/users/3
+
+# this single data request...
